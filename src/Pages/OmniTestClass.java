@@ -28,6 +28,11 @@ public class OmniTestClass extends BaseClass {
         sendKeys(xpaths.loginEmail,xpaths.Email);
         sendKeys(xpaths.loginPassword, xpaths.Password);
         forClick(xpaths.loginButton);
+        
+        Thread.sleep(12000);
+        //getText(xpaths.getTextVerifyDashboard);
+        verifyText(getText(xpaths.getTextVerifyDashboard),"Welcome to the Disease Classification App!");
+        
        
     }
 
