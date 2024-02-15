@@ -6,9 +6,11 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="D:/Appium/jarfiles/commons-lang3-3.14.0.jar"/>
-	<classpathentry kind="lib" path="D:/Appium/jarfiles/java-client-3.2.0.jar"/>
-	<classpathentry kind="lib" path="D:/Appium/jarfiles/selenium-server-standalone-3.5.3.jar"/>
-	<classpathentry kind="lib" path="D:/automation learning project/selenium-java-4.4.0/lib/testng-7.7.1.jar"/>
+	<classpathentry kind="lib" path="E:/Appium/jar files/jarfiles/commons-lang3-3.14.0.jar"/>
+	<classpathentry kind="lib" path="E:/Appium/jar files/jarfiles/java-client-3.2.0.jar"/>
+	<classpathentry kind="lib" path="E:/Appium/jar files/jarfiles/selenium-server-standalone-3.5.3.jar"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="E:/slf4j.jar"/>
+	<classpathentry kind="lib" path="E:/New folder/logback.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
