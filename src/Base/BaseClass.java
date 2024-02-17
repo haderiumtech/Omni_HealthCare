@@ -8,9 +8,13 @@ import org.testng.Assert;
 import Xpaths.ApplicationXpaths;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.remote.MobilePlatform;
+
+
+
 
 public class BaseClass extends ApplicationXpaths  {
 
@@ -38,12 +42,13 @@ public class BaseClass extends ApplicationXpaths  {
     }
 
     public DesiredCapabilities setCapabilities()  {
+    	
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Appium");
         capabilities.setCapability(MobileCapabilityType.PLATFORM, MobilePlatform.ANDROID);
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554");
         capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "14");
-        capabilities.setCapability(MobileCapabilityType.APP, "E:\\Appium\\omni.apk");
+        capabilities.setCapability(MobileCapabilityType.APP, "D:\\Appium\\omni.apk");
         capabilities.setCapability("appium:waitAppPackage", true);
         capabilities.setCapability("appium:appPackage", "com.omni");
         capabilities.setCapability("appium:appActivity", "com.omni.MainActivity");
@@ -87,5 +92,10 @@ public class BaseClass extends ApplicationXpaths  {
 
     public void verifyText(String expected, String actual) {
         Assert.assertEquals(expected, actual);
+    }
+    
+    public void swipeUp() {
+    	TouchAction action = new TouchAction(mobileDriver).longPress(973,973).moveTo(973, 410).release();
+    	action.perform();
     }
 }

@@ -21,7 +21,21 @@ public class ApplicationXpaths {
 	
 	
 	//xpaths for diabetes page
-	public final String diabetesButton = "//*[contains(@text, 'DIABETES')]";
+	public final String diabetesButton = "//android.view.ViewGroup[@content-desc=\"DIABETES\"]/android.view.ViewGroup/android.view.View";
+	public final String pregnanciesTextField = "//android.widget.EditText[@text='Pregnancies']";
+	public final String glucoseTextField = "//android.widget.EditText[@text='Glucose']";
+	public final String bloodPressureTextField = "//android.widget.EditText[@text='BloodPressure']";
+	public final String skinThicknessTextField = "//android.widget.EditText[@text='SkinThickness']";
+	public final String InsulinTextField = "//android.widget.EditText[@text='Insulin']";
+	public final String bmiTextField = "//android.widget.EditText[@text='BMI']";
+	public final String diabetesPedigreeFunctionTextField = "//android.widget.EditText[@text='DiabetesPedigreeFunction']";
+	public final String ageTextField = "//android.widget.EditText[@text=\"Age\"]";
+	public final String diabetesSubmitButton = "//android.view.ViewGroup[@content-desc='SUBMIT']";
+	
+	
+	public final String resultPopup = "//android.widget.TextView[@text='Result']";
+	
+	//android.widget.TextView[@text="Result"]
 	
 
 	
